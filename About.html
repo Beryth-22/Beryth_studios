@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Beryth Studios</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="styles/about.css" type="text/css" media="all" />
+    <script type="text/javascript" charset="utf-8">
+      function show() {
+        var checkBox= document.getElementById('check');
+      if (checkBox.checked == true){
+        document.getElementById('navmenu').style.margin-top = "19em";
+      } else {
+      document.getElementById('navmenu').style.margin-top = "-19em";
+      }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/aca100faaf.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav class="nav">
+      <h2 class="name">Beryth Studios</h2>
+      <ul class="navmenu" id="navmenu">
+        <li class="navitem n1"><a href="index.html">Home</a></li>
+        <li class="navitem n3"><a href="contact_us.html">Hire us</a></li>
+        <li class="navitem n4"><a href="login.html">Login</a></li>
+      </ul>
+      <label for="check"><img class="checkie" src="pics/nav.png" alt="" /></label>
+      <input type="checkbox" name="check" class="check" id="check" onclick="show()"/>
+    </nav>
+    <!-- Body section -->
+    <div class="body-section">
+      <div class="about-section">
+        <h1 class="">About</h1>
+      </div>
+      
+      <div class="workers-section">
+        <div class="swiper my-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card__image">
+               <img src="pics/nav.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
